@@ -1,4 +1,4 @@
-![Logo do projeto](https://imgur.com/a/WDtUIWs)
+![Logo do projeto](https://i.imgur.com/hz0EF67.png)
 
 # Projeto HBO Max
 
