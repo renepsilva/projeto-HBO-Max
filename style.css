@@ -1,0 +1,3776 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-image: url("img-background.png");
+  background-size: cover;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 89%;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+.nav-bar .img-logo img{
+  cursor: pointer;
+}
+
+.nav-bar a{
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 10px;
+    margin: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.nav-bar .btn-assinatura{
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #ffffff2c;
+    border: none;
+}
+
+.fixed{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 90%;
+  left: 0;
+  z-index: auto;
+  background-color: rgb(0, 0, 0);
+}
+
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+  
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+
+  * {
+    -ms-overflow-style: none;
+  }
+  
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel {
+    position: relative;
+    padding-top: 45%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+    overflow-y: hidden;
+  }
+  
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    background-image: linear-gradient(45deg, #01000B #01000B);
+    overflow-y: hidden;
+  }
+
+    .box-movie{
+      width: 100vw;
+    }
+    .carousel__slide {
+      position: relative;
+      flex: 0 0 100%;
+      width: 100%;
+      counter-increment: item;
+      -webkit-mask-image: linear-gradient(to top, transparent 1%, black 25%);
+    }
+
+  #carousel__slide1{
+    background-image: url("barbie-movie-4k-banner.jpg");
+    background-size: cover;
+    width: 100vw;
+  }
+  #carousel__slide1 .box-movie .barbie-logo{
+    height: 150px;
+    width: 350px;
+    margin-top: 20%;
+    margin-left: 2%;
+  }
+  #carousel__slide1 .box-movie h1{
+    color: #ffffff;
+    margin-left: 3%;
+  }
+
+  #carousel__slide1 .box-movie button{
+    color: #ffffff;
+    font-weight: 800;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    height: 70px;
+    width: 250px;
+    margin-left: 3%;
+    padding-right: 20px;
+    margin-top: 20px;
+    border-radius:5px;
+    font-size: 17px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #carousel__slide1 .box-movie button:hover{
+    border: 3px solid rgba(166,0,255,1);
+    background: rgba(2, 0, 36, 0.553);
+  }
+
+ #carousel__slide1 .box-movie button i{
+    margin: 0;
+    padding-left: 30px;
+    font-size: 30px;
+  }
+
+  #carousel__slide1 .box-movie p{
+    color: #ffffff;
+    font-size: 25px;
+    margin-left: 3%;
+  }
+  #carousel__slide2{
+    background-image: url("gran-hd-banner.jpg");
+    background-size: cover;
+    width: 100vw;
+  }
+
+  #carousel__slide2 .box-movie .gran-logo{
+    height: 150px;
+    width: 500px;
+    margin-top: 20%;
+    margin-left: 2%;
+  }
+  #carousel__slide2 .box-movie h1{
+    color: #ffffff;
+    margin-left: 3%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  #carousel__slide2 .box-movie button{
+    color: #ffffff;
+    font-weight: 800;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    height: 70px;
+    width: 250px;
+    margin-left: 3%;
+    padding-right: 20px;
+    margin-top: 20px;
+    border-radius:5px;
+    font-size: 17px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #carousel__slide2 .box-movie button:hover{
+    border: 3px solid rgba(166,0,255,1);
+    background: rgba(2, 0, 36, 0.553);
+  }
+
+ #carousel__slide2 .box-movie button i{
+    margin: 0;
+    padding-left: 30px;
+    font-size: 30px;
+  }
+
+  #carousel__slide2 .box-movie p{
+    color: #ffffff;
+    font-size: 25px;
+    margin-left: 3%;
+    margin-top: 0;
+}
+  #carousel__slide3{
+    background-image: url("true-hd-banner.png");
+    background-size: cover;
+    width: 100vw;
+  }
+  #carousel__slide3 .box-movie .true-logo{
+    height: 180px;
+    width: 600px;
+    margin-top: 20%;
+    margin-left: 2%;
+  }
+  #carousel__slide3 .box-movie h1{
+    color: #ffffff;
+    margin-left: 3%;
+  }
+
+  #carousel__slide3 .box-movie button{
+    color: #ffffff;
+    font-weight: 800;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    height: 70px;
+    width: 250px;
+    margin-left: 3%;
+    padding-right: 20px;
+    margin-top: 20px;
+    border-radius:5px;
+    font-size: 17px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #carousel__slide3 .box-movie button:hover{
+    border: 3px solid rgba(166,0,255,1);
+    background: rgba(2, 0, 36, 0.553);
+  }
+
+ #carousel__slide3 .box-movie button i{
+    margin: 0;
+    padding-left: 30px;
+    font-size: 30px;
+  }
+
+  #carousel__slide3 .box-movie p{
+    color: #ffffff;
+    font-size: 25px;
+    margin-left: 3%;
+}
+
+  #carousel__slide4{
+    background-image: url("the-last-of-us-4k-banner.jpg");
+    background-size: cover;
+    width: 100vw;
+  }
+  #carousel__slide4 .box-movie .the-last-logo{
+    height: 150px;
+    width: 600px;
+    margin-top: 20%;
+    margin-left: 3%;
+  }
+  #carousel__slide4 .box-movie h1{
+    color: #ffffff;
+    margin-left: 3%;
+    margin-top: 20px;
+  }
+
+  #carousel__slide4 .box-movie button{
+    color: #ffffff;
+    font-weight: 800;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    height: 70px;
+    width: 250px;
+    margin-left: 3%;
+    padding-right: 20px;
+    margin-top: 20px;
+    border-radius:5px;
+    font-size: 17px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #carousel__slide4 .box-movie button:hover{
+    border: 3px solid rgba(166,0,255,1);
+    background: rgba(2, 0, 36, 0.553);
+  }
+
+ #carousel__slide4 .box-movie button i{
+    margin: 0;
+    padding-left: 30px;
+    font-size: 30px;
+  }
+
+  #carousel__slide4 .box-movie p{
+    color: #ffffff;
+    font-size: 25px;
+    margin-left: 3%;
+}
+  
+  .carousel__slide:nth-child(even) {
+    background-color: #99f;
+  }
+  
+  .carousel__slide:before li{
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+    list-style: none;
+  }
+  
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    overflow-y: hidden;
+  }
+  
+  @media (hover: hover) {
+    .carousel__snapper {
+      animation-name: tonext, snap;
+      animation-timing-function: ease;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+  
+    .carousel__slide:last-child .carousel__snapper {
+      animation-name: snap;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .carousel__snapper {
+      animation-name: none;
+    }
+  }
+  
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none;
+  }
+  
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 3%;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-flex;
+  }
+  
+  .carousel__navigation-button {
+    display: inline-block;
+    margin: 10px;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #ffffff87;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+  }
+
+  .carousel__navigation-button:hover{
+    background-color: #ffffff;
+  }
+  
+  i{
+    color: #ffffff;
+    margin-top: 22%;
+    font-size: 30px;
+    margin-left: 22px;
+  }
+  i.fa-solid.fa-chevron-right{
+    position: absolute;
+    margin-top: 22%;
+    font-size: 30px;
+    margin-left: 25px;
+    right: 22px;
+    padding: 0;
+  }
+  .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    top: 0;
+    margin-top: 22%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
+  
+  .carousel::before,
+  .carousel__prev {
+    left: -1rem;
+  }
+  
+  .carousel::after,
+  .carousel__next {
+    right: 1rem;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+    content: '';
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .carousel__movie{
+    position: relative;
+    padding-top: 45%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+  }
+  
+  section.carousel__movie__second{
+    padding-top: 400px;
+  }
+
+  .carousel__movie__second{
+    position: relative;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+    overflow: hidden;
+    overflow-y: hidden;
+  }
+
+  .carousel__viewport__movie__second{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 105%;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+  }
+  
+  .carousel__slide__movie {
+    position: relative;
+    overflow-y: hidden;
+    flex: 0 0 10%;
+    height:95%;
+    width: 100%;
+    margin: 10px;
+    counter-increment: item;
+  }
+  
+
+  .text-movie{
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 1rem ;
+  }
+
+  .text-movie p{
+    font-size: 20px;
+  }
+
+  #carousel__slide1__movie{
+    background-image: url("tokyo-vice-poster.png");
+    padding: 5px solid black;
+    background-size: cover;
+    opacity: 0.7; 
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide1__movie:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+  #carousel__slide2__movie{
+    background-image: url("navalposter.png");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide2__movie:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide3__movie{
+    background-image: url("segura-a-onda-poster.png");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide3__movie:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide4__movie{
+    background-image: url("euphoria.png");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide4__movie:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide5__movie{
+    background-image: url("a-vida-sexual.png");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide5__movie:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide6__movie{
+    background-image: url("bookie.png");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide6__movie:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide7__movie{
+    background-image: url("pagan-peak.png");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide7__movie:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide8__movie{
+    background-image: url("the-middle.png");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide8__movie:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide9__movie{
+    background-image: url("super-natural.png");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide9__movie:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide10__movie{
+    background-image: url("vampire-diaries.png");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide10__movie:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide11__movie{
+    background-color: #121212;
+    overflow: hidden;
+  }
+
+  #carousel__slide11__movie spam{
+    color: #b1b1b1;
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55%;
+  }
+
+  #carousel__slide11__movie i.fa-solid.fa-chevron-right{
+    margin-top: 155px;
+    overflow: hidden;
+  }
+
+  #carousel__slide1__movie i.fa-solid.fa-chevron-left{
+   margin-top: 155px;
+   overflow: hidden;
+  }
+
+  .carousel__slide__movie:nth-child(even) {
+    background-color: #99f;
+  }
+  
+  .carousel__slide__movie:before li{
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+    list-style: none;
+  }
+  
+  .carousel__snapper__movie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    overflow-y: hidden;
+  }
+  
+  i{
+    color: #ffffff;
+    margin-top: 22%;
+    font-size: 30px;
+    margin-left: 22px;
+  }
+  i.fa-solid.fa-chevron-right{
+    position: absolute;
+    margin-top: 22%;
+    font-size: 30px;
+    margin-left: 25px;
+    right: 22px;
+    padding: 0;
+  }
+  .carousel__movie::before,
+  .carousel__movie::after,
+  .carousel__prev__movie,
+  .carousel__next__movie {
+    position: absolute;
+    top: 0;
+    margin-top: 22%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
+  
+  .carousel__movie::before,
+  .carousel__prev__movie {
+    left: 1rem;
+  }
+
+  #carousel__slide1__movie.carousel__movie::before,
+  .carousel__prev__movie {
+    left: 1rem;
+    margin-top: 70%;
+    overflow-x: hidden;
+  }
+
+  #carousel__slide11__movie.carousel__movie::before,
+  .carousel__next__movie {
+    left: 17rem;
+    margin-top: 70%;
+  }
+  
+  .carousel__movie::after,
+  .carousel__next__movie {
+    right: 1rem;
+  }
+  
+  .carousel__movie::before,
+  .carousel__movie::after {
+    content: '';
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .carousel__movie{
+    position: relative;
+    padding-top: 45%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+    overflow-y: hidden;
+  }
+  
+  section.carousel__movie__three{
+    padding-top: 400px;
+    overflow-y: hidden;
+  }
+
+  .carousel__movie__three{
+    position: relative;
+    overflow-y: hidden;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+  }
+
+  .carousel__viewport__movie__three{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 80%;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    background-image: linear-gradient(45deg, #01000B #01000B);
+  }
+  
+  .carousel__slide__movie_three {
+    position: relative;
+    overflow-y: hidden;
+    flex: 0 0 20%;
+    height:95%;
+    width: 100%;
+    margin: 10px;
+    counter-increment: item;
+  }
+  
+
+  .text-movie{
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 1rem ;
+    margin-top: 20px;
+  }
+
+  .text-movie p{
+    font-size: 20px;
+  }
+
+  #carousel__slide1__movie_three{
+    background-image: url("madame-web-movie-banner.jpg");
+    padding: 5px solid black;
+    background-size: cover;
+    opacity: 0.7; 
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide1__movie_three:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+  #carousel__slide2__movie_three{
+    background-image: url("wonka-poster.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide2__movie_three:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide3__movie_three{
+    background-image: url("wish-2-movie-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide3__movie_three:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide4__movie_three{
+    background-image: url("argylle-movie-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide4__movie_three:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide5__movie_three{
+    background-image: url("the-color-purple-2-movie-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide5__movie_three:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide6__movie_three{
+    background-image: url("bob-marley-movie-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide6__movie_three:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide7__movie_three{
+    background-image: url("ferrari-3-movie-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide7__movie_three:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide8__movie_three{
+    background-image: url("the-beekeeper-movie-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide8__movie_three:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide9__movie_three{
+    background-image: url("dune-movie-banner.png");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide9__movie_three:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide10__movie_three{
+    background-image: url("aquaman-2-movie-banner.png");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide10__movie_three:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide11__movie_three{
+    background-color: #121212;
+  }
+
+  #carousel__slide11__movie_three spam{
+    color: #b1b1b1;
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+  }
+
+  #carousel__slide11__movie_three i.fa-solid.fa-chevron-right{
+    margin-top: 155px;
+  }
+
+  #carousel__slide3__movie_three i.fa-solid.fa-chevron-right{
+    margin-top: 155px;
+  }
+
+  #carousel__slide1__movie_three i.fa-solid.fa-chevron-left{
+   margin-top: 155px;
+  }
+
+  .carousel__slide__movie__three:nth-child(even) {
+    background-color: #99f;
+  }
+  
+  .carousel__slide__movie__three:before li{
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+    list-style: none;
+  }
+  
+  .carousel__snapper__movie__three {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    overflow-y: hidden;
+  }
+  
+  i{
+    color: #ffffff;
+    margin-top: 22%;
+    font-size: 30px;
+    margin-left: 22px;
+  }
+  i.fa-solid.fa-chevron-right{
+    position: absolute;
+    margin-top: 22%;
+    font-size: 30px;
+    margin-left: 25px;
+    right: 22px;
+    padding: 0;
+  }
+
+  #carousel__slide3__movie_three i.fa-solid.fa-chevron-left{
+    visibility: hidden;
+    margin-top: 31%;
+    font-size: 30px;
+    margin-left: 90px;
+    right: 22px;
+    padding: 0;
+    transition: all 0.5s;
+  }
+
+  #carousel__slide3__movie_three:hover i.fa-solid.fa-chevron-left{
+    visibility: visible;
+    margin-top: 31%;
+    font-size: 30px;
+    margin-left: 65px;
+    right: 22px;
+    padding: 0;
+  }
+
+
+  .carousel__movie__three::before,
+  .carousel__movie__three::after,
+  .carousel__prev__movie__three,
+  .carousel__prev__movie__three__migration,
+  .carousel__next__movie__three {
+    position: absolute;
+    top: 0;
+    margin-top: 22%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
+  
+  .carousel__movie__three::before,
+  .carousel__prev__movie__three {
+    left: 1rem;
+  }
+
+  #carousel__slide1__movie_three.carousel__movie__three::before,
+  .carousel__prev__movie__three {
+    left: 1rem;
+    margin-top: 34%;
+  }
+
+  #carousel__slide11__movie_three.carousel__movie__three::before,
+  .carousel__next__movie__three {
+    left: 38rem;
+    margin-top: 34%;
+  }
+
+  #carousel__slide3__movie_three.carousel__movie__three::before,
+  .carousel__prev__movie__three__migration {
+    left: 4rem;
+    margin-top: 34%;
+  }
+  
+  .carousel__movie:after,
+  .carousel__next__movie__three {
+    right: 1rem;
+  }
+  
+  .carousel__movie::before,
+  .carousel__movie::after {
+    content: '';
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .harry-potter{
+    background-image: url("harry-potter-background-2.jpg");
+    background-size: cover;
+    opacity: 0.9;
+  }
+
+  .section-harry-potter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-harry-potter .harry-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 90px;
+  }
+  .section-harry-potter .harry-info h1{
+    color: #ffffff;
+    font-size: 75px;
+    font-weight: 800;
+  }
+  .section-harry-potter .harry-info p{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 800;
+  }
+
+  .carousel__movie__harry{
+    padding-top: 400px;
+    overflow-y: hidden;
+  }
+
+  .carousel__movie__harry{
+    position: relative;
+    overflow-y: hidden;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+  }
+
+  .carousel__viewport__movie__harry{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 80%;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    background-image: linear-gradient(45deg, #01000B #01000B);
+  }
+  
+  .carousel__slide__movie__harry {
+    position: relative;
+    overflow-y: hidden;
+    flex: 0 0 20%;
+    height:95%;
+    width: 100%;
+    margin: 10px;
+    counter-increment: item;
+  }
+  
+
+  .text-movie{
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 1rem ;
+  }
+
+  .text-movie p{
+    font-size: 20px;
+  }
+
+  #carousel__slide1__movie__harry{
+    background-image: url("harry-potter-1-banner.jpg");
+    padding: 5px solid black;
+    background-size: cover;
+    opacity: 0.7; 
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide1__movie__harry:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+  #carousel__slide2__movie__harry{
+    background-image: url("harry-potter-2-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide2__movie__harry:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide3__movie__harry{
+    background-image: url("harry-potter-3-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide3__movie__harry:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide4__movie__harry{
+    background-image: url("harry-potter-4-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide4__movie__harry:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide5__movie__harry{
+    background-image: url("harry-potter-5-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide5__movie__harry:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide6__movie__harry{
+    background-image: url("harry-potter-6-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide6__movie__harry:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide7__movie__harry{
+    background-image: url("harry-potter-7-part1-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide7__movie__harry:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide8__movie__harry{
+    background-image: url("harry-potter-7-part2-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide11__movie__harry{
+    background-color: #121212;
+  }
+
+  #carousel__slide11__movie__harry spam{
+    color: #b1b1b1;
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+  }
+
+  #carousel__slide11__movie__harry i.fa-solid.fa-chevron-right{
+    margin-top: 155px;
+  }
+
+  #carousel__slide3__movie__harry i.fa-solid.fa-chevron-right{
+    margin-top: 155px;
+  }
+
+  #carousel__slide1__movie__harry i.fa-solid.fa-chevron-left{
+   margin-top: 155px;
+  }
+
+  .carousel__slide__movie__harry:nth-child(even) {
+    background-color: #99f;
+  }
+  
+  .carousel__slide__movie__harry:before li{
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+    list-style: none;
+  }
+  
+  .carousel__snapper__movie__harry {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    overflow-y: hidden;
+  }
+  
+  i{
+    color: #ffffff;
+    margin-top: 22%;
+    font-size: 30px;
+    margin-left: 22px;
+  }
+  i.fa-solid.fa-chevron-right{
+    position: absolute;
+    margin-top: 22%;
+    font-size: 30px;
+    margin-left: 25px;
+    right: 22px;
+    padding: 0;
+  }
+
+  #carousel__slide3__movie__harry i.fa-solid.fa-chevron-left{
+    visibility: hidden;
+    margin-top: 31%;
+    font-size: 30px;
+    margin-left: 90px;
+    right: 22px;
+    padding: 0;
+    transition: all 0.5s;
+  }
+
+  #carousel__slide3__movie__harry:hover i.fa-solid.fa-chevron-left{
+    visibility: visible;
+    margin-top: 31%;
+    font-size: 30px;
+    margin-left: 65px;
+    right: 22px;
+    padding: 0;
+  }
+
+
+  .carousel__movie__harry::before,
+  .carousel__movie__harry::after,
+  .carousel__prev__movie__harry,
+  .carousel__prev__movie__harry__potter,
+  .carousel__next__movie__harry {
+    position: absolute;
+    top: 0;
+    margin-top: 22%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
+  
+  .carousel__movie__harry::before,
+  .carousel__prev__movie__harry {
+    left: 1rem;
+  }
+
+  #carousel__slide1__movie__harry.carousel__movie__harry::before,
+  .carousel__prev__movie__harry {
+    left: 1rem;
+    margin-top: 34%;
+  }
+
+  #carousel__slide11__movie__harry.carousel__movie__harry::before,
+  .carousel__next__movie__harry {
+    left: 38rem;
+    margin-top: 34%;
+  }
+
+  #carousel__slide3__movie__harry.carousel__movie__harry::before,
+  .carousel__prev__movie__harry__potter {
+    left: 4rem;
+    margin-top: 34%;
+  }
+  
+  .carousel__movie__harry:after,
+  .carousel__next__movie__harry {
+    right: 1rem;
+  }
+  
+  .carousel__movie__harry::before,
+  .carousel__movie__harry::after {
+    content: '';
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+  }
+/*********************************SEÇÃO DE PARCEIROS*************************/
+  .carousel__universe__hbomax{
+    padding-top: 15%;
+    overflow-y: hidden;
+  }
+
+  .carousel__universe__hbomax{
+    position: relative;
+    overflow-y: hidden;
+    perspective: 100%;
+  }
+
+  .carousel__viewport__universe__hbomax{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    background-image: linear-gradient(45deg, #01000B #01000B);
+  }
+  
+  .carousel__slide__universe__hbomax{
+    position: relative;
+    flex: 0 0 14%;
+    height:90%;
+    margin: 10px;
+    counter-increment: item;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+  }
+  
+
+  .text-movie{
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 1rem ;
+  }
+
+  .text-movie p{
+    font-size: 20px;
+  }
+
+  #carousel__slide1__hbo{
+    background-image: url("hbo-logo-2-removebg-preview.png");
+    background-color: rgb(30,33,40);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide1__hbo:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+  #carousel__slide2__discovery{
+    background-image: url("discovery-logo-4-removebg-preview.png");
+    background-color: rgb(0,98,146);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide2__discovery:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide3__hh{
+    background-image: url("discovery-hh-2-removebg-preview.png");
+    background-color: rgb(231,43,1);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide3__hh:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide4__cartoon{
+    background-image: url("cartoon-7-logo-removebg-preview.png");
+    background-color: rgb(33,32,36);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide4__cartoon:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide5__dc{
+    background-image: url("dc-logo-removebg-preview.png");
+    background-color: rgb(0,107,247);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide5__dc:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide6__discoverykids{
+    background-image: url("discovery-kids-logo-removebg-preview.png");
+    background-color: rgb(1,193,0);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide6__discoverykids:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide7__championsleague{
+    background-image: url("champions-league-logo-removebg-preview.png");
+    background-color: rgb(1,39,255);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide7__championsleague:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide8__paulistao{
+    background-image: url("paulistao-logo-removebg-preview.png");
+    background-color: rgb(255,29,5);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide8__paulistao:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide9__adultswim{
+    background-image: url("adult-swim-logo-removebg-preview.png");
+    background-color: rgb(37,36,39);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide9__adultswim:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide10__id{
+    background-image: url("discovery-id-logo-removebg-preview.png");
+    background-color: rgb(255,14,13);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide10__id:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide11__wizarding{
+    background-image: url("wizarding-world-logo-removebg-preview.png");
+    background-color: rgb(35,33,35);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide11__wizarding:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide11__wizarding i.fa-solid.fa-chevron-right{
+    margin-top: 120px;
+  }
+
+  #carousel__slide1__hbo i.fa-solid.fa-chevron-left{
+   margin-top: 120px;
+  }
+
+  .carousel__slide__universe__hbomax:nth-child(even) {
+    background-color: #99f;
+  }
+  
+  .carousel__slide__universe__hbomax:before li{
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+    list-style: none;
+  }
+  
+  .carousel__snapper__universe__hbomax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    overflow-y: hidden;
+  }
+  
+  i{
+    color: #ffffff;
+    margin-top: 22%;
+    font-size: 30px;
+    margin-left: 22px;
+  }
+  i.fa-solid.fa-chevron-right{
+    position: absolute;
+    margin-top: 22%;
+    font-size: 30px;
+    margin-left: 25px;
+    right: 22px;
+    padding: 0;
+  }
+
+  #carousel__slide7__championsleague i.fa-solid.fa-chevron-left{
+    visibility: hidden;
+    margin-top: 34%;
+    font-size: 30px;
+    margin-left: 30px;
+    right: 22px;
+    padding: 0;
+    transition: all 0.5s;
+  }
+
+  #carousel__slide7__championsleague:hover i.fa-solid.fa-chevron-left{
+    visibility: visible;
+    margin-top: 34%;
+    font-size: 30px;
+    margin-left: 30px;
+    right: 22px;
+    padding: 0;
+  }
+
+
+  .carousel__universe__hbomax::before,
+  .carousel__universe__hbomax::after,
+  .carousel__prev__hbo__max,
+  .carousel__prev__hbo__max1,
+  .carousel__next__hbo__max{
+    position: absolute;
+    top: 0;
+    margin-top: 22%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
+  
+  .carousel__universe__hbomax::before,
+  .carousel__prev__hbo__max {
+    left: 1rem;
+  }
+
+  #carousel__slide1__hbo.carousel__universe__hbomax::before,
+  .carousel__prev__hbo__max {
+    left: 1rem;
+    margin-top: 38%;
+  }
+
+  #carousel__slide11__wizarding.carousel__universe__hbomax::before,
+  .carousel__next__hbo__max {
+    left: 25rem;
+    margin-top: 38%;
+  }
+
+  #carousel__slide7__championsleague.carousel__universe__hbomax::before,
+  .carousel__prev__hbo__max1 {
+    left: 1rem;
+    margin-top: 37%;
+  }
+  
+  .carousel__universe__hbomax:after,
+  .carousel__next__hbo__max {
+    right: 1rem;
+  }
+  
+  .carousel__universe__hbomax::before,
+  .carousel__universe__hbomax::after {
+    content: '';
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  section.carousel__movie__four{
+    padding-top: 400px;
+    overflow-y: hidden;
+  }
+
+  .carousel__movie__four{
+    position: relative;
+    overflow-y: hidden;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+  }
+
+  .carousel__viewport__movie__four{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 80%;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    background-image: linear-gradient(45deg, #01000B #01000B);
+  }
+  
+  .carousel__slide__movie_four{
+    position: relative;
+    overflow-y: hidden;
+    flex: 0 0 20%;
+    height:95%;
+    width: 100%;
+    margin: 10px;
+    counter-increment: item;
+  }
+  
+
+  .text-movie{
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 1rem ;
+    margin-top: 20px;
+  }
+
+  .text-movie p{
+    font-size: 20px;
+  }
+
+  #carousel__slide1__movie_four{
+    background-image: url("gato-de-botas-movie-poster.jpg");
+    padding: 5px solid black;
+    background-size: cover;
+    opacity: 0.7; 
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide1__movie_four:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+  #carousel__slide2__movie_four{
+    background-image: url("homem-aranha-no-aranha-verso-movie-poster.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide2__movie_four:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide3__movie_four{
+    background-image: url("sonic-2-movie-poster.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide3__movie_four:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide4__movie_four{
+    background-image: url("bob-sponja-o-incrivel-resgate-movie-poster.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide4__movie_four:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide5__movie_four{
+    background-image: url("patrulha\ canina-movie-poster.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide5__movie_four:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide6__movie_four{
+    background-image: url("grinch-movie-poster.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide6__movie_four:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide7__movie_four{
+    background-image: url("ferrari-3-movie-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide7__movie_four:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide8__movie_four{
+    background-image: url("the-beekeeper-movie-banner.jpg");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide8__movie_four:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide9__movie_four{
+    background-image: url("dune-movie-banner.png");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide9__movie_four:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide10__movie_four{
+    background-image: url("aquaman-2-movie-banner.png");
+    background-size: cover;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+  }
+
+  #carousel__slide10__movie_four:hover{
+    opacity: 1;
+    border-radius: 3px;
+    border: 4px solid #7F27FF;
+  }
+
+  #carousel__slide11__movie_four{
+    background-color: #121212;
+  }
+
+  #carousel__slide11__movie_four spam{
+    color: #b1b1b1;
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+  }
+
+  #carousel__slide11__movie_four i.fa-solid.fa-chevron-right{
+    margin-top: 155px;
+  }
+
+  #carousel__slide3__movie_four i.fa-solid.fa-chevron-right{
+    margin-top: 155px;
+  }
+
+  #carousel__slide1__movie_four i.fa-solid.fa-chevron-left{
+   margin-top: 155px;
+  }
+
+  .carousel__slide__movie__four:nth-child(even) {
+    background-color: #99f;
+  }
+  
+  .carousel__slide__movie__four:before li{
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+    list-style: none;
+  }
+  
+  .carousel__snapper__movie__four{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+  }
+  
+  i{
+    color: #ffffff;
+    margin-top: 22%;
+    font-size: 30px;
+    margin-left: 22px;
+  }
+  i.fa-solid.fa-chevron-right{
+    position: absolute;
+    margin-top: 22%;
+    font-size: 30px;
+    margin-left: 25px;
+    right: 22px;
+    padding: 0;
+  }
+
+  #carousel__slide3__movie_four i.fa-solid.fa-chevron-left{
+    visibility: hidden;
+    margin-top: 31%;
+    font-size: 30px;
+    margin-left: 90px;
+    right: 22px;
+    padding: 0;
+    transition: all 0.5s;
+  }
+
+  #carousel__slide3__movie_four:hover i.fa-solid.fa-chevron-left{
+    visibility: visible;
+    margin-top: 31%;
+    font-size: 30px;
+    margin-left: 65px;
+    right: 22px;
+    padding: 0;
+  }
+
+
+  .carousel__movie__four::before,
+  .carousel__movie__four::after,
+  .carousel__prev__movie__four,
+  .carousel__prev__movie__four__migration,
+  .carousel__next__movie__four{
+    position: absolute;
+    top: 0;
+    margin-top: 22%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
+  
+  .carousel__movie__four::before,
+  .carousel__prev__movie__four{
+    left: 1rem;
+  }
+
+  #carousel__slide1__movie_four.carousel__movie__four::before,
+  .carousel__prev__movie__four{
+    left: 1rem;
+    margin-top: 34%;
+  }
+
+  #carousel__slide11__movie_four.carousel__movie__four::before,
+  .carousel__next__movie__four{
+    left: 38rem;
+    margin-top: 34%;
+  }
+
+  #carousel__slide3__movie_four.carousel__movie__four::before,
+  .carousel__prev__movie__four__migration {
+    left: 4rem;
+    margin-top: 34%;
+  }
+  
+  .carousel__movie:after,
+  .carousel__next__movie__four{
+    right: 1rem;
+  }
+  
+  .carousel__movie::before,
+  .carousel__movie::after {
+    content: '';
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  /*#########################-PERGUNTAS FREQUENTES -#########################*/
+    .accordion {
+      width: 60%;
+      margin: 10px auto;
+      color: #ffffff;
+      background-color: transparent;
+      padding: 40px 45px;
+    }
+
+    .accordion h1 {
+      color: #ffffff;
+      font-weight: 600;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .accordion .container {
+      position: relative;
+      margin: 10px 10px;
+    }
+    
+    .accordion .label {
+      position: relative;
+      padding: 10px 0;
+      font-size: 25px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .accordion .label::before {
+      content: '+';
+      color: #ffffff;
+      position: absolute;
+      top: 50%;
+      right: -5px;
+      font-size: 30px;
+      transform: translateY(-50%);
+    }
+    
+    .accordion .content {
+      position: relative;
+      background-color: transparent;
+      height: 0;
+      font-size: 18px;
+      text-align: justify;
+      width: 90%;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+    
+    .accordion hr {
+      width: 100;
+      margin-left: 0;
+      border: 3px solid #ffffff;
+    }
+
+    .accordion .container.active .content {
+      height: 150px;
+    }
+    
+    .accordion .container.active .label::before {
+      content: '-';
+      font-size: 20px;
+    }
+
+  /*#########################-RESPONSIVIDADE TABLET-#########################*/
+  /*#########################------------------------------------------#########################*/
+  @media only screen and (max-width: 1024px){
+    .nav-bar{
+      display: none;
+  }
+
+  #carousel__slide1 .box-movie .barbie-logo{ /*#########################-CARROSSEL PRINCIPAL-#########################*/
+    max-height: 100px;
+    max-width: 250px;
+    margin-top: 10%;
+    margin-left: 2%;
+  }
+
+  #carousel__slide1{
+    background-image: url("barbie-movie-4k-banner.jpg");
+    background-size: cover;
+    width: 100vw;
+  }
+
+
+  #carousel__slide1 .box-movie h1{
+    color: #ffffff;
+    margin-left: 3%;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  #carousel__slide1 .box-movie button{
+    color: #ffffff;
+    font-weight: 800;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    height: 70px;
+    width: 250px;
+    margin-left: 3%;
+    padding-right: 20px;
+    margin-top: 20px;
+    border-radius:5px;
+    font-size: 17px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #carousel__slide1 .box-movie p{
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 3%;
+  }
+
+  #carousel__slide2 .box-movie .gran-logo{
+    max-height: 100px;
+    max-width: 400px;
+    margin-top: 10%;
+    margin-left: 2%;
+  }
+
+  #carousel__slide2{
+    background-size: cover;
+    width: 100vw;
+  }
+
+
+  #carousel__slide2 .box-movie h1{
+    color: #ffffff;
+    margin-left: 3%;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  #carousel__slide2 .box-movie button{
+    color: #ffffff;
+    font-weight: 800;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    height: 70px;
+    width: 250px;
+    margin-left: 3%;
+    padding-right: 20px;
+    margin-top: 20px;
+    border-radius:5px;
+    font-size: 17px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #carousel__slide2 .box-movie p{
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 3%;
+  }
+
+  #carousel__slide3 .box-movie .true-logo{
+    max-height: 110px;
+    max-width: 450px;
+    margin-top: 10%;
+    margin-left: 2%;
+  }
+
+  #carousel__slide3{
+    background-size: cover;
+    width: 100vw;
+  }
+
+
+  #carousel__slide3 .box-movie h1{
+    color: #ffffff;
+    margin-left: 3%;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  #carousel__slide3 .box-movie button{
+    color: #ffffff;
+    font-weight: 800;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    height: 70px;
+    width: 250px;
+    margin-left: 3%;
+    padding-right: 20px;
+    margin-top: 20px;
+    border-radius:5px;
+    font-size: 17px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #carousel__slide3 .box-movie p{
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 3%;
+  }
+
+  #carousel__slide4 .box-movie .the-last-logo{
+    max-height: 110px;
+    max-width: 450px;
+    margin-top: 10%;
+    margin-left: 2%;
+  }
+
+  #carousel__slide4{
+    background-size: cover;
+    width: 100vw;
+  }
+
+
+  #carousel__slide4 .box-movie h1{
+    color: #ffffff;
+    margin-left: 3%;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  #carousel__slide4 .box-movie button{
+    color: #ffffff;
+    font-weight: 800;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    height: 70px;
+    width: 250px;
+    margin-left: 3%;
+    padding-right: 20px;
+    margin-top: 20px;
+    border-radius:5px;
+    font-size: 17px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #carousel__slide4 .box-movie p{
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 3%;
+  } /*#########################-CARROSSEL PRINCIPAL-#########################*/
+
+  .carousel__viewport__movie__second{ /*#########################-CARROSSEL SECUNDÁRIO-#########################*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 180%;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  } /*#########################-CARROSSEL SECUNDÁRIO-#########################*/
+
+  .carousel__slide__movie_three {
+    position: relative;
+    flex: 0 0 38%;
+    height:95%;
+    width: 100%;
+    margin: 10px;
+    counter-increment: item;
+  }
+
+  .carousel__slide__movie__harry {
+    position: relative;
+    flex: 0 0 38%;
+    height:95%;
+    width: 100%;
+    margin: 10px;
+    counter-increment: item;
+  }
+
+  .carousel__slide__universe__hbomax{
+    position: relative;
+    flex: 0 0 26%;
+    height:95%;
+    margin: 10px;
+    counter-increment: item;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel__slide__movie_four{
+    position: relative;
+    flex: 0 0 37%;
+    height:95%;
+    width: 100%;
+    margin: 10px;
+    counter-increment: item;
+  }
+
+  .accordion {
+    width: 60%;
+    margin: 0px auto;
+    color: #ffffff;
+    background-color: transparent;
+    padding: 20px 45px;
+  }
+
+  .accordion h1 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accordion .container {
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .accordion .label::before {
+    content: '+';
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .accordion .content {
+    position: relative;
+    background-color: transparent;
+    height: 0;
+    font-size: 18px;
+    text-align: justify;
+    width: 90%;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 3px solid #ffffff;
+  }
+
+  .accordion .container.active .content {
+    height: 150px;
+  }
+  
+  .accordion .container.active .label::before {
+    content: '-';
+    font-size: 20px;
+  }
+  }
+
+  /*#########################------------------------------------------#########################*/
+
+
+  @media only screen and (max-width: 481px){
+    .nav-bar{ /*#########################-BARRA DE NAVEGAÇÃO-#########################*/
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 95%;
+      left: 0;
+      background-color: #000000;
+      opacity: 0.8;
+  }
+  
+  .nav-bar .img-logo img{
+    cursor: pointer;
+    height: 120px;
+    width: 120px;
+    margin-right: 35px;
+  }
+  
+  .nav-bar a{
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 10px;
+      padding: 0px;
+      margin: 10px;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+  }
+  
+  .nav-bar .btn-assinatura{
+      display: none;
+  }
+  
+  .fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 95%;
+    left: 0;
+    z-index: auto;
+    background-color: rgb(0, 0, 0);
+  } /*#########################-BARRA DE NAVEGAÇÃO-#########################*/
+
+#carousel__slide1 .box-movie .barbie-logo{ /*#########################-CARROSSEL PRINCIPAL-#########################*/
+  max-height: 30px;
+  max-width: 80px;
+  margin-top: 27%;
+  margin-left: 2%;
+}
+
+#carousel__slide1{
+  background-image: url("barbie-movie-4k-banner.jpg");
+  background-size: cover;
+  width: 100vw;
+}
+
+
+#carousel__slide1 .box-movie h1{
+  color: #ffffff;
+  margin-left: 3%;
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#carousel__slide1 .box-movie button{
+  color: #ffffff;
+  font-weight: 800;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  height: 70px;
+  width: 250px;
+  margin-left: 3%;
+  padding-right: 20px;
+  margin-top: 20px;
+  border-radius:5px;
+  font-size: 17px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+#carousel__slide1 .box-movie p{
+  color: #ffffff;
+  font-size: 8px;
+  margin-left: 3%;
+}
+
+#carousel__slide2 .box-movie .gran-logo{
+  max-height: 40px;
+  max-width: 120px;
+  margin-top: 25%;
+  margin-left: 2%;
+}
+
+#carousel__slide2{
+  background-size: cover;
+  width: 100vw;
+}
+
+
+#carousel__slide2 .box-movie h1{
+  color: #ffffff;
+  margin-left: 3%;
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#carousel__slide2 .box-movie button{
+  color: #ffffff;
+  font-weight: 800;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  height: 70px;
+  width: 250px;
+  margin-left: 3%;
+  padding-right: 20px;
+  margin-top: 20px;
+  border-radius:5px;
+  font-size: 17px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+#carousel__slide2 .box-movie p{
+  color: #ffffff;
+  font-size: 8px;
+  margin-left: 3%;
+}
+
+#carousel__slide3 .box-movie .true-logo{
+  max-height: 40px;
+  max-width: 120px;
+  margin-top: 25%;
+  margin-left: 2%;
+}
+
+#carousel__slide3{
+  background-size: cover;
+  width: 100vw;
+}
+
+
+#carousel__slide3 .box-movie h1{
+  color: #ffffff;
+  margin-left: 3%;
+  font-size: 10px;
+  margin-top:5px;
+  margin-bottom: 0;
+}
+
+#carousel__slide3 .box-movie button{
+  color: #ffffff;
+  font-weight: 800;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  height: 70px;
+  width: 250px;
+  margin-left: 3%;
+  padding-right: 20px;
+  margin-top: 20px;
+  border-radius:5px;
+  font-size: 17px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+#carousel__slide3 .box-movie p{
+  color: #ffffff;
+  font-size: 8px;
+  margin-left: 3%;
+}
+
+#carousel__slide4 .box-movie .the-last-logo{
+  max-height: 30px;
+  max-width: 110px;
+  margin-top: 28%;
+  margin-left: 2%;
+}
+
+#carousel__slide4{
+  background-size: cover;
+  width: 100vw;
+}
+
+
+#carousel__slide4 .box-movie h1{
+  color: #ffffff;
+  margin-left: 3%;
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#carousel__slide4 .box-movie button{
+  color: #ffffff;
+  font-weight: 800;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  height: 70px;
+  width: 250px;
+  margin-left: 3%;
+  padding-right: 20px;
+  margin-top: 20px;
+  border-radius:5px;
+  font-size: 17px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+#carousel__slide4 .box-movie p{
+  color: #ffffff;
+  font-size: 8px;
+  margin-left: 3%;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 120%;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  background-image: linear-gradient(0deg, #01000B #01000B);
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  counter-increment: item;
+  -webkit-mask-image: linear-gradient(to top, transparent 1%, black 30%);
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 1%;
+  left: 0;
+  text-align: center;
+  display: none;
+}
+.carousel__navigation-button {
+  display: inline-block;
+  margin: 3px;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ffffff87;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+} /*#########################-CARROSSEL PRINCIPAL-#########################*/
+
+section.carousel__movie__second{ /*#########################-CARROSSEL SECUNDÁRIO-#########################*/
+  padding-top: 60%;
+}
+
+.carousel__viewport__movie__second{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 200%;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+ol.carousel__viewport__movie__second{
+  padding-left: 0;
+}
+
+.carousel__slide__movie {
+  position: relative;
+  flex: 0 0 20%;
+  height: 50%;
+  width: 100%;
+  margin: 10px;
+  counter-increment: item;
+}
+
+.text-movie{
+  color: #ffffff;
+  font-size: 2px;
+  margin-left: 1rem ;
+  margin-top: 30px;
+}
+
+.text-movie h1{
+  font-size: 10px;
+}
+.text-movie p{
+  font-size: 8px;
+} /*#########################-CARROSSEL SECUNDÁRIO-#########################*/
+
+.carousel__slide__movie_three {
+  position: relative;
+  flex: 0 0 95%;
+  height: 45%;
+  width: 150%;
+  margin: 10px;
+  counter-increment: item;
+}
+
+section.carousel__movie__three{
+  padding-top: 60%;
+  margin-bottom: 20px;
+}
+
+.carousel__movie__three{
+  position: relative;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+ol.carousel__viewport__movie__three{
+  padding-left: 0;
+}
+
+.carousel__viewport__movie__three{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 200%;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  background-image: linear-gradient(45deg, #01000B #01000B);
+}
+
+.section-harry-potter .harry-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.section-harry-potter .harry-info h1{
+  color: #ffffff;
+  font-size: 20px;
+  width: 100%;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-harry-potter .harry-info p{
+  color: #ffffff;
+  font-size: 10px;
+  width: 100%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__movie__harry{
+  padding-top: 60%;
+}
+
+.carousel__movie__harry{
+  position: relative;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+ol.carousel__viewport__movie__harry{
+  padding-left: 0;
+}
+
+.carousel__viewport__movie__harry{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  background-image: linear-gradient(45deg, #01000B #01000B);
+}
+
+.carousel__slide__movie__harry {
+  position: relative;
+  flex: 0 0 80%;
+  height:95%;
+  width: 100%;
+  margin: 10px;
+  counter-increment: item;
+}
+
+.carousel__universe__hbomax{
+  padding-top: 48%;
+}
+
+.carousel__universe__hbomax{
+  position: relative;
+  perspective: 100%;
+}
+
+ol.carousel__viewport__universe__hbomax{
+  padding: 0;
+}
+
+.carousel__viewport__universe__hbomax{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 130%;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  background-image: linear-gradient(45deg, #01000B #01000B);
+}
+
+.carousel__slide__universe__hbomax{
+  position: relative;
+  flex: 0 0 80%;
+  height:90%;
+  margin: 10px;
+  counter-increment: item;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.carousel__movie__four{
+  padding-top: 60%;
+  margin-top: 10px;
+}
+
+.carousel__movie__four{
+  position: relative;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+ol.carousel__viewport__movie__four{
+  padding: 0;
+}
+
+.carousel__viewport__movie__four{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  background-image: linear-gradient(45deg, #01000B #01000B);
+}
+
+.carousel__slide__movie_four{
+  position: relative;
+  flex: 0 0 95%;
+  height:95%;
+  width: 100%;
+  margin: 10px;
+  counter-increment: item;
+}
+
+i{
+display: none;
+}
+
+i.fa-solid.fa-chevron-left{
+  display: none;
+  }
+
+i.fa-solid.fa-chevron-right{
+display: none;
+}
+.carousel__movie::before,
+.carousel__movie::after,
+.carousel__prev__movie,
+.carousel__next__movie {
+  position: absolute;
+  top: 0;
+  margin-top: 22%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel__movie::before,
+.carousel__prev__movie {
+  left: 1rem;
+  display: none;
+}
+
+#carousel__slide1__movie.carousel__movie::before,
+.carousel__prev__movie {
+  left: 1rem;
+  margin-top: 70%;
+  overflow-x: hidden;
+}
+
+#carousel__slide11__movie.carousel__movie::before,
+.carousel__next__movie {
+  left: 17rem;
+  margin-top: 70%;
+  display: none;
+}
+
+.carousel__movie::after,
+.carousel__next__movie {
+  right: 1rem;
+  display: none;
+}
+
+.accordion {
+  width: 100%;
+  margin: 5px;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.accordion h1 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion .container {
+  position: relative;
+  margin: 5px;
+}
+
+.accordion .label {
+  position: relative;
+  padding:10px 0;
+  font-size: 15px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.accordion .label::before {
+  content: '+';
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 15px;
+  transform: translateY(-50%);
+}
+
+.accordion .content {
+  position: relative;
+  background-color: transparent;
+  height: 0;
+  font-size: 10px;
+  text-align: justify;
+  width: 90%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.accordion hr {
+  width: 95%;
+  margin-left: 0;
+  border: 3px solid #ffffff;
+}
+
+.accordion .container.active .content {
+  height: 150px;
+}
+
+.accordion .container.active .label::before {
+  content: '-';
+  font-size: 20px;
+}
+  }
+
+  @media only screen and (max-width: 360px){
+
+    .nav-bar{ /*#########################-BARRA DE NAVEGAÇÃO-#########################*/
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 95%;
+      left: 0;
+      background-color: #000000;
+      opacity: 0.8;
+  }
+  
+  .nav-bar .img-logo img{
+    cursor: pointer;
+    height: 120px;
+    width: 120px;
+    margin-right: 35px;
+  }
+  
+  .nav-bar a{
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 10px;
+      padding: 0px;
+      margin: 10px;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+  }
+  
+  .nav-bar .btn-assinatura{
+      display: none;
+  }
+  
+  .fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 95%;
+    left: 0;
+    z-index: auto;
+    background-color: rgb(0, 0, 0);
+  } /*#########################-BARRA DE NAVEGAÇÃO-#########################*/
+
+  .box-movie{
+    width: 100vw;
+  }
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    counter-increment: item;
+    -webkit-mask-image: linear-gradient(to top, transparent 10%, black 20%);
+  }
+
+#carousel__slide1 .box-movie .barbie-logo{ /*#########################-CARROSSEL PRINCIPAL-#########################*/
+  max-height: 30px;
+  max-width: 80px;
+  margin-top: 27%;
+  margin-left: 2%;
+}
+
+#carousel__slide1{
+  background-image: url("barbie-movie-4k-banner.jpg");
+  background-size: cover;
+  width: 100vw;
+}
+
+
+#carousel__slide1 .box-movie h1{
+  color: #ffffff;
+  margin-left: 3%;
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#carousel__slide1 .box-movie button{
+  color: #ffffff;
+  font-weight: 800;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  height: 70px;
+  width: 250px;
+  margin-left: 3%;
+  padding-right: 20px;
+  margin-top: 20px;
+  border-radius:5px;
+  font-size: 17px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+#carousel__slide1 .box-movie p{
+  color: #ffffff;
+  font-size: 8px;
+  margin-left: 3%;
+}
+
+#carousel__slide2 .box-movie .gran-logo{
+  max-height: 40px;
+  max-width: 120px;
+  margin-top: 25%;
+  margin-left: 2%;
+}
+
+#carousel__slide2{
+  background-size: cover;
+  width: 100vw;
+}
+
+
+#carousel__slide2 .box-movie h1{
+  color: #ffffff;
+  margin-left: 3%;
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#carousel__slide2 .box-movie button{
+  color: #ffffff;
+  font-weight: 800;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  height: 70px;
+  width: 250px;
+  margin-left: 3%;
+  padding-right: 20px;
+  margin-top: 20px;
+  border-radius:5px;
+  font-size: 17px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+#carousel__slide2 .box-movie p{
+  color: #ffffff;
+  font-size: 8px;
+  margin-left: 3%;
+}
+
+#carousel__slide3 .box-movie .true-logo{
+  max-height: 40px;
+  max-width: 120px;
+  margin-top: 25%;
+  margin-left: 2%;
+}
+
+#carousel__slide3{
+  background-size: cover;
+  width: 100vw;
+}
+
+
+#carousel__slide3 .box-movie h1{
+  color: #ffffff;
+  margin-left: 3%;
+  font-size: 10px;
+  margin-top:5px;
+  margin-bottom: 0;
+}
+
+#carousel__slide3 .box-movie button{
+  color: #ffffff;
+  font-weight: 800;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  height: 70px;
+  width: 250px;
+  margin-left: 3%;
+  padding-right: 20px;
+  margin-top: 20px;
+  border-radius:5px;
+  font-size: 17px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+#carousel__slide3 .box-movie p{
+  color: #ffffff;
+  font-size: 8px;
+  margin-left: 3%;
+}
+
+#carousel__slide4 .box-movie .the-last-logo{
+  max-height: 30px;
+  max-width: 110px;
+  margin-top: 28%;
+  margin-left: 2%;
+}
+
+#carousel__slide4{
+  background-size: cover;
+  width: 100vw;
+}
+
+
+#carousel__slide4 .box-movie h1{
+  color: #ffffff;
+  margin-left: 3%;
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#carousel__slide4 .box-movie button{
+  color: #ffffff;
+  font-weight: 800;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  height: 70px;
+  width: 250px;
+  margin-left: 3%;
+  padding-right: 20px;
+  margin-top: 20px;
+  border-radius:5px;
+  font-size: 17px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,0,255,1) 0%, rgba(252,0,255,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+#carousel__slide4 .box-movie p{
+  color: #ffffff;
+  font-size: 8px;
+  margin-left: 3%;
+}
+
+ol.carousel__viewport{
+  padding-left: 0;
+}
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 120%;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  background-image: linear-gradient(0deg, #01000B #01000B);
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  counter-increment: item;
+  -webkit-mask-image: linear-gradient(to top, transparent 1%, black 30%);
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 1%;
+  left: 0;
+  text-align: center;
+  display: none;
+}
+.carousel__navigation-button {
+  display: inline-block;
+  margin: 3px;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ffffff87;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+} /*#########################-CARROSSEL PRINCIPAL-#########################*/
+
+section.carousel__movie__second{ /*#########################-CARROSSEL SECUNDÁRIO-#########################*/
+  padding-top: 60%;
+}
+
+.carousel__viewport__movie__second{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 200%;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+ol.carousel__viewport__movie__second{
+  padding-left: 0;
+}
+
+.carousel__slide__movie {
+  position: relative;
+  flex: 0 0 20%;
+  height: 50%;
+  width: 100%;
+  margin: 10px;
+  counter-increment: item;
+}
+
+.text-movie{
+  color: #ffffff;
+  font-size: 2px;
+  margin-left: 1rem ;
+  margin-top: 30px;
+}
+
+.text-movie h1{
+  font-size: 10px;
+}
+.text-movie p{
+  font-size: 8px;
+} /*#########################-CARROSSEL SECUNDÁRIO-#########################*/
+
+.carousel__slide__movie_three {
+  position: relative;
+  flex: 0 0 95%;
+  height: 45%;
+  width: 150%;
+  margin: 10px;
+  counter-increment: item;
+}
+
+section.carousel__movie__three{
+  padding-top: 60%;
+  margin-bottom: 20px;
+}
+
+.carousel__movie__three{
+  position: relative;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+ol.carousel__viewport__movie__three{
+  padding-left: 0;
+}
+
+.carousel__viewport__movie__three{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 200%;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  background-image: linear-gradient(45deg, #01000B #01000B);
+}
+
+.section-harry-potter .harry-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.section-harry-potter .harry-info h1{
+  color: #ffffff;
+  font-size: 20px;
+  width: 100%;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-harry-potter .harry-info p{
+  color: #ffffff;
+  font-size: 10px;
+  width: 100%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__movie__harry{
+  padding-top: 60%;
+}
+
+.carousel__movie__harry{
+  position: relative;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+ol.carousel__viewport__movie__harry{
+  padding-left: 0;
+}
+
+.carousel__viewport__movie__harry{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  background-image: linear-gradient(45deg, #01000B #01000B);
+}
+
+.carousel__slide__movie__harry {
+  position: relative;
+  flex: 0 0 80%;
+  height:95%;
+  width: 100%;
+  margin: 10px;
+  counter-increment: item;
+}
+
+.carousel__universe__hbomax{
+  padding-top: 48%;
+}
+
+.carousel__universe__hbomax{
+  position: relative;
+  perspective: 100%;
+}
+
+ol.carousel__viewport__universe__hbomax{
+  padding: 0;
+}
+
+.carousel__viewport__universe__hbomax{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 130%;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  background-image: linear-gradient(45deg, #01000B #01000B);
+}
+
+.carousel__slide__universe__hbomax{
+  position: relative;
+  flex: 0 0 80%;
+  height:90%;
+  margin: 10px;
+  counter-increment: item;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.carousel__movie__four{
+  padding-top: 60%;
+  margin-top: 10px;
+}
+
+.carousel__movie__four{
+  position: relative;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+ol.carousel__viewport__movie__four{
+  padding: 0;
+}
+
+.carousel__viewport__movie__four{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  background-image: linear-gradient(45deg, #01000B #01000B);
+}
+
+.carousel__slide__movie_four{
+  position: relative;
+  flex: 0 0 95%;
+  height:95%;
+  width: 100%;
+  margin: 10px;
+  counter-increment: item;
+}
+
+i{
+display: none;
+}
+
+i.fa-solid.fa-chevron-left{
+  display: none;
+  }
+
+i.fa-solid.fa-chevron-right{
+display: none;
+}
+.carousel__movie::before,
+.carousel__movie::after,
+.carousel__prev__movie,
+.carousel__next__movie {
+  position: absolute;
+  top: 0;
+  margin-top: 22%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel__movie::before,
+.carousel__prev__movie {
+  left: 1rem;
+  display: none;
+}
+
+#carousel__slide1__movie.carousel__movie::before,
+.carousel__prev__movie {
+  left: 1rem;
+  margin-top: 70%;
+  overflow-x: hidden;
+}
+
+#carousel__slide11__movie.carousel__movie::before,
+.carousel__next__movie {
+  left: 17rem;
+  margin-top: 70%;
+  display: none;
+}
+
+.carousel__movie::after,
+.carousel__next__movie {
+  right: 1rem;
+  display: none;
+}
+
+.accordion {
+  width: 100%;
+  margin: 5px;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.accordion h1 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion .container {
+  position: relative;
+  margin: 5px;
+}
+
+.accordion .label {
+  position: relative;
+  padding:10px 0;
+  font-size: 15px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.accordion .label::before {
+  content: '+';
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 15px;
+  transform: translateY(-50%);
+}
+
+.accordion .content {
+  position: relative;
+  background-color: transparent;
+  height: 0;
+  font-size: 10px;
+  text-align: justify;
+  width: 90%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.accordion hr {
+  width: 95%;
+  margin-left: 0;
+  border: 3px solid #ffffff;
+}
+
+.accordion .container.active .content {
+  height: 150px;
+}
+
+.accordion .container.active .label::before {
+  content: '-';
+  font-size: 20px;
+}
+  }
