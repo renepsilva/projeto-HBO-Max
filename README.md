@@ -1,6 +1,6 @@
 ![Logo do projeto](https://imgur.com/a/WDtUIWs)
 
-#Projeto HBO Max
+# Projeto HBO Max
 
 Como um adimmirador da plataforma, seu site, designe e etc da HBO Max (Hoje Max) decedi propor esse desafio a mim mesmo a tentar recriar o site chegando o mais proximo de seu original. É a primeira vez que faço um proejeto nesse estilo (Streaming) e por conta disso foi realmente um desafio do começo ao fim. Começando por todos os posters dos filmes e séries, logomarcas já que alguns deles não são nada fáceis de se encontrar e muitas vezes eu tive que editar por fora. Outro desafio foi a implementação do carrosel, algo que nunca havia trabalhado em nenhum dos meus projetos e ainda não sei muito Js para aplicá-lo, então, acabaei por usar o Bootstrap implementando um carrosel utilizando HTML e CSS, não sendo  o mais ideal mas que até consegui um resultado bacana com ele. Sem falar que ao decorrer do projeto a plataforma HBO Max passou a ser Max e com isso todo o site na qual estava me espelhando mudou completamente. E aplicando um por do meu conhecimento em Js eu implementei um acorddion onde são muito utilizados para a "Perguntas Frequentes" obtendo um ótimmo resultado aproximando mais ainda do original.
 
