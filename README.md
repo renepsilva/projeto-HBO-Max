@@ -14,4 +14,4 @@ Esse proejeto teve como objetivo principal colocar em práticas conhecimentos ap
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 ## 💭 Entre em contato
-* Linkedin [Acesse](https://www.linkedin.com/in/ren%C3%AA-paulino-da-silva-b1b5312a9/)
+* Linkedin [Acesse](https://www.linkedin.com/in/renepsilvadev/)
